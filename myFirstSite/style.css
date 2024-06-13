@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: Montserrat;
+    color: white;
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    height: 5000px;
+}
+
+/* Первый блок сайта */
+.containerFirst {
+    background-image: url(/img/bg.png);
+    height: 1294px;
+}
+
+/* Вся шапка, классы: .logo .address .worktime .worktime1 .worktime2*/
+.header {
+    margin: 0;
+    margin-top: 37px;
+    padding-top: 10px;
+    height: 82px;
+    display: inline-flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+
+/* Логотип в виде текста в шапке */
+.logo {
+    margin-left: 20%;
+    font-size: 21px;
+}
+
+/* Местонахождение (в шапке). Текст + картинка */
+.address {
+    font-size: 12px;
+    width: 151px;
+    margin-left: 57%;
+    display: inline-flex;
+    position: absolute;
+}
+
+/* картинка + текст в шапке. Телефон для связи и время работы. Содержит в себе классы: .worktime1 .worktime2 */
+.worktime {
+    width: 231px;
+    display: inline-flex;
+    margin-left: 69%;
+    position: absolute;
+}
+
+/* Картинка местонахождения в шапке*/
+#Places {
+    width: 17px;
+    height: 23px;
+    padding-top: 5px;
+    padding-right: 12px;
+}
+
+/* Картинка телефона в шапке*/
+#Call {
+    width: 19px;
+    height: 19px;
+    padding-top: 5px;
+    padding-right: 13px;
+    padding-left: 19px;
+}
+
+/* Текст с номером телефона в шапке */
+.phoneNum {
+    font-weight: 700;
+    font: bold;
+    font-size: 20px;
+}
+
+/* Обращение ко всему тексту с тегом address чтобы убрать курсив */
+address {
+    font-style: italic;
+}
+
+/* Текст времени работы в шапке */
+.worktime2 {
+    font-size: 13px;
+}
+
+/* Весь первый параграф с текстом + кнопка "Перейти в каталог" с дополнением */
+.container1 {
+    width: 647px;
+    height: 334px;
+    margin: 0;
+    margin-left: 20%;
+    margin-top: 188px;
+}
+
+/* Первое слово параграфа "Вкуснейшие" */
+#theBest {
+    background-color: #F2F6FA;
+    color: #2E363E;
+    font-size: 15px;
+    width: 132px;
+    height: 37px;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* Первая жирная часть параграфа */
+#h1 {
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 24px;
+    margin: 0;
+}
+
+/* Вторая маленькая часть параграфа */
+#h2 {
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 24px;
+    margin: 0;
+    line-height: 143%;
+}
+
+/* Кнопка "Перейти в каталог" + доп текст рядом с кнопкой */
+.btnAndTxt {
+    margin-top: 40px;
+    margin-left: 20%;
+    display: inline-flex;
+}
+
+/* Кнопка "Перейти в каталог" */
+.btn {
+    padding: 0;
+    width: 277px;
+    height: 88px;
+    border-radius: 8px;
+    background-color: #FED84C;
+    color: #2E363E;
+    font-size: 18px;
+}
+
+/* Дополнительный текст рядом с кнопкой "Перейти в каталог" */
+.txt {
+    padding-left: 20px;
+    font-size: 15px;
+    width: 140px;
+    height: auto;
+    align-content: center;
+    font-weight: 200;
+}
+
+/* Кнопка "Перейти в каталог" при наведении на нее курсора */
+.btn:hover {
+    background: linear-gradient(#feb74c,#fef24c);
+    cursor: pointer;
+}
+
+
+.containerSecond {
+    height: 1926px;
+    width: 1920px;
+}
+
+.headingOfSecondContainer {
+    height: 60px;
+    font-size: 48px;
+    width: 1180px;
+    margin: auto;
+    color: #2E363E;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.block {
+    width: 380px;
+    height: 582px;
+    background: #FFF;
+    margin-bottom: 20px;
+    border: 1px solid rgba(46, 54, 62, 0.1);
+    border-radius: 12px;
+}
+
+.catalog {
+    margin: auto;
+    width: 1180px;
+    height: 1786px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.nameInCatalog {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E363E;
+    padding-top: 44px;
+    padding-left: 50px;
+    margin: 0;
+    width: 240px;
+    height: 35px;
+}
+
+.descriptionInCatalog {
+    font-size: 16px;
+    color: #2E363E;
+    padding-top: 12px;
+    padding-left: 50px;
+    margin: 0;
+    width: 240px;
+    height: 48px;
+    line-height: 150%;
+}
+
+.priceInCatalog {
+    font-size: 24px;
+    font-weight: medium;
+    color: #434B53;
+    padding-top: 24px;
+    padding-left: 50px;
+    margin: 0;
+    width: 108px;
+    height: 36px;
+}
+
+.btnInCatalog {
+    margin: 0;
+    width: 163px;
+    height: 68px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #FED84C;
+    color: #2E363E;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .address {
+    margin-left: 40%;
+    }
+
+    .worktime {
+        margin-left: 60%;
+        }
+
+    .logo {
+        margin-left: 10%;
+    }
+
+    .btnAndTxt {
+        margin-left: 10%;
+    }
+
+    .container1 {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #h1 {
+        font-size: 38px;
+    }
+
+    .container1 {
+        width: 400px;
+        height: 500px;
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .btn {
+        width: 250px;
+        height: 70px;
+    }
+
+    #h2 {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .address {
+        position: absolute;
+        font-size: 20px;
+        width: 250px;
+        margin-left: 100px;
+        margin-top: 700px;
+    }
+
+    .worktime {
+        position: absolute;
+        width: 280px;
+        margin-left: 100px;
+        margin-top: 800px;
+    }
+
+
+}
